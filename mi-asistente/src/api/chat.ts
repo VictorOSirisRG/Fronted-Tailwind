@@ -39,7 +39,7 @@ async function respuestaSimulada(historial:MensajeProps[]):Promise<string>{
         throw new Error("No se pudo conectar con chef AI")
     }
     if(ultimo.includes("platano")){
-        return "cn platanos puedes hacer mangu,tostones o maduros al horno. Cual prefieres?"
+        return "Con platanos puedes hacer mangu,tostones o maduros al horno. Cual prefieres?"
     }
-    return `Recibi:"${historial[historial.length-1]?.texto}.Cuando se conecte el cahtbot real,aqui vers su respuesta. `
+    return `"${historial[historial.length-1]?.texto}.Cuando se conecte el chatbot real,aqui vera su respuesta. `
 }
